@@ -9,6 +9,6 @@ public partial class AppShell : Shell
 		InitializeComponent();
         Routing.RegisterRoute(nameof(MenuPrincipal), typeof(MenuPrincipal));
         Routing.RegisterRoute(nameof(BuscarSpotify), typeof(BuscarSpotify));
-
+        Routing.RegisterRoute(nameof(guardadosView), typeof(guardadosView));
     }
 }

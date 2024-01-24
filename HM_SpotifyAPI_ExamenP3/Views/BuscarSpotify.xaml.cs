@@ -38,15 +38,18 @@ public partial class BuscarSpotify : ContentPage
                 switch (i)
                 {
                     case 0:
+                        lbla.Text = art;
                         lblimagen.Source = spoty.albums.items[i].data.coverArt.sources[i].url;
                         lblinfo.Text = spoty.albums.items[i].data.name;
                         break;
                     case 1:
+                        lbla2.Text = art;
                         lblimagen2.Source = spoty.albums.items[i].data.coverArt.sources[i].url;
                         lblinfo2.Text = spoty.albums.items[i].data.name;
 
                         break;
                     case 2:
+                        lbla3.Text = art;
                         lblimagen3.Source = spoty.albums.items[i].data.coverArt.sources[i].url;
                         lblinfo3.Text = spoty.albums.items[i].data.name;
                         break;
@@ -62,6 +65,49 @@ public partial class BuscarSpotify : ContentPage
 
     private void guardar_Clicked(object sender, EventArgs e)
     {
+        string art = lbla.Text;
+        string nombre = lblinfo.Text;
+     
+        guardados save = new guardados()
+        {
+            name = nombre,
+            imagen = art
 
+        };
+        App.saveRepo.Add(save);
+        DisplayAlert("GUARDADO", $"Se ha GUARDADO la informacion del album {nombre}", "ACEPTAR");
+        lblinfo.Text = null;
+    }
+
+    private void guardar_Clicked2(object sender, EventArgs e)
+    {
+        string art = lbla2.Text;
+        string nombre = lblinfo2.Text;
+
+        guardados save = new guardados()
+        {
+            name = nombre,
+            imagen = art
+
+        };
+        App.saveRepo.Add(save);
+        DisplayAlert("GUARDADO", $"Se ha GUARDADO la informacion del album {nombre}", "ACEPTAR");
+        lblinfo.Text = null;
+    }
+
+    private void guardar_Clicked3(object sender, EventArgs e)
+    {
+        string art = lbla3.Text;
+        string nombre = lblinfo3.Text;
+
+        guardados save = new guardados()
+        {
+            name = nombre,
+            imagen = art
+
+        };
+        App.saveRepo.Add(save);
+        DisplayAlert("GUARDADO", $"Se ha GUARDADO la informacion del album {nombre}", "ACEPTAR");
+        lblinfo.Text = null;
     }
 }

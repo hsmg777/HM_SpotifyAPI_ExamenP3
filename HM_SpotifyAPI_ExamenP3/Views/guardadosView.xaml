@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="HM_SpotifyAPI_ExamenP3.Views.guardadosView"
+             Title="guardadosView">
+    <CollectionView x:Name="guardadosCollection" ItemsSource="{Binding saveList}" BackgroundColor="Black" >
+
+        <CollectionView.ItemsLayout>
+            <LinearItemsLayout Orientation="Vertical" ItemSpacing="10" />
+        </CollectionView.ItemsLayout>
+
+        <CollectionView.ItemTemplate>
+            <DataTemplate>
+                <Frame BackgroundColor="Black" CornerRadius="5" Margin="5" BorderColor="#007ACC">
+                    <StackLayout>
+                        <Label Text="Artista:" FontSize="20" TextColor="White"/>
+                        <Label Text="{Binding imagen}" FontSize="20" TextColor="DarkOrange"/>
+                        <Label Text="Album:" FontSize="20" TextColor="White"/>
+                        <Label Text="{Binding name}" FontSize="20" TextColor="DarkOrange"/>
+                        
+                        <Button BackgroundColor="White"
+                        TextColor="Black"
+                        Text="Eliminar" Command="{Binding BindingContext.DeleteCommand, Source={x:Reference Name=guardadosCollection}}" 
+                        CommandParameter="{Binding .}" BorderColor="Red" />
+
+                    </StackLayout>
+                </Frame>
+            </DataTemplate>
+        </CollectionView.ItemTemplate>
+
+    </CollectionView>
+</ContentPage>

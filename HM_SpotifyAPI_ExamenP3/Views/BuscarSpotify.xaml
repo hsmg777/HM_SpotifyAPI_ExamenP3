@@ -23,22 +23,25 @@
             
             <StackLayout Grid.Row="0" Grid.Column="0" Spacing="10">
                 <Label x:Name="lblinfo" TextColor="DarkOrange" HorizontalOptions="Center"/>
-                <Image Source="" x:Name="lblimagen" WidthRequest="200" HeightRequest="200"/>
+                    <Label x:Name="lbla" TextColor="Gray" HorizontalOptions="Center"/>
+                    <Image Source="" x:Name="lblimagen" WidthRequest="200" HeightRequest="200"/>
                 <Button Text="Guardar" Clicked="guardar_Clicked" BackgroundColor="DarkOrange" HorizontalOptions="Center" HeightRequest="50"
                         WidthRequest="150"/>
             </StackLayout>
 
             <StackLayout Grid.Row="0" Grid.Column="1" Spacing="10">
                     <Label x:Name="lblinfo2" TextColor="DarkOrange" HorizontalOptions="Center"/>
-                <Image Source="" x:Name="lblimagen2" WidthRequest="200" HeightRequest="200"/>
-                <Button Text="Guardar" Clicked="guardar_Clicked" BackgroundColor="DarkOrange" HorizontalOptions="Center" HeightRequest="50"
+                    <Label x:Name="lbla2" TextColor="Gray" HorizontalOptions="Center"/>
+                    <Image Source="" x:Name="lblimagen2" WidthRequest="200" HeightRequest="200"/>
+                <Button Text="Guardar" Clicked="guardar_Clicked2" BackgroundColor="DarkOrange" HorizontalOptions="Center" HeightRequest="50"
                  WidthRequest="150"/>
             </StackLayout>
 
             <StackLayout Grid.Row="0" Grid.Column="2" Spacing="10">
                     <Label x:Name="lblinfo3" TextColor="DarkOrange" HorizontalOptions="Center"/>
-                <Image Source="" x:Name="lblimagen3" WidthRequest="200" HeightRequest="200"/>
-                <Button Text="Guardar" Clicked="guardar_Clicked" BackgroundColor="DarkOrange" HorizontalOptions="Center" HeightRequest="50"
+                    <Label x:Name="lbla3" TextColor="Gray" HorizontalOptions="Center"/>
+                    <Image Source="" x:Name="lblimagen3" WidthRequest="200" HeightRequest="200"/>
+                <Button Text="Guardar" Clicked="guardar_Clicked3" BackgroundColor="DarkOrange" HorizontalOptions="Center" HeightRequest="50"
                  WidthRequest="150"/>
             </StackLayout>
 

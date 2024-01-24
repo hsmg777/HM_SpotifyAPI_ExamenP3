@@ -14,6 +14,6 @@ public partial class MenuPrincipal : ContentPage
 
     private void irSQL_Clicked(object sender, EventArgs e)
     {
-
+        Shell.Current.GoToAsync(nameof(guardadosView));
     }
 }
