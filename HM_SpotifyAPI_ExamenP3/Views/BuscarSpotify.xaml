@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="HM_SpotifyAPI_ExamenP3.Views.BuscarSpotify"
+             Title="Spotify" BackgroundColor="Black">
+    <ScrollView>
+    <VerticalStackLayout Spacing="10">
+        <Label
+            Text="Ingrese el nombre del artista:"  TextColor="White" VerticalOptions="Start" FontSize="25"/>
+        <Entry x:Name="lblartista" Placeholder="Nombre del artista" PlaceholderColor="Gray" TextColor="White"/>
+            <Button Text="BUSCAR" Clicked="buscar_clicked" BackgroundColor="LightGreen" HorizontalOptions="Center" HeightRequest="50"
+                        WidthRequest="150" TextColor="Black"/>
+            <Grid>
+                <Grid.RowDefinitions>
+                    <RowDefinition Height="*" />
+                    <RowDefinition Height="*" />
+                </Grid.RowDefinitions>
+                <Grid.ColumnDefinitions>
+                    <ColumnDefinition Width="*" />
+                    <ColumnDefinition Width="*" />
+                    <ColumnDefinition Width="*" />
+                </Grid.ColumnDefinitions>
+            
+            <StackLayout Grid.Row="0" Grid.Column="0" Spacing="10">
+                <Label x:Name="lblinfo" TextColor="DarkOrange" HorizontalOptions="Center"/>
+                <Image Source="" x:Name="lblimagen" WidthRequest="200" HeightRequest="200"/>
+                <Button Text="Guardar" Clicked="guardar_Clicked" BackgroundColor="DarkOrange" HorizontalOptions="Center" HeightRequest="50"
+                        WidthRequest="150"/>
+            </StackLayout>
+
+            <StackLayout Grid.Row="0" Grid.Column="1" Spacing="10">
+                    <Label x:Name="lblinfo2" TextColor="DarkOrange" HorizontalOptions="Center"/>
+                <Image Source="" x:Name="lblimagen2" WidthRequest="200" HeightRequest="200"/>
+                <Button Text="Guardar" Clicked="guardar_Clicked" BackgroundColor="DarkOrange" HorizontalOptions="Center" HeightRequest="50"
+                 WidthRequest="150"/>
+            </StackLayout>
+
+            <StackLayout Grid.Row="0" Grid.Column="2" Spacing="10">
+                    <Label x:Name="lblinfo3" TextColor="DarkOrange" HorizontalOptions="Center"/>
+                <Image Source="" x:Name="lblimagen3" WidthRequest="200" HeightRequest="200"/>
+                <Button Text="Guardar" Clicked="guardar_Clicked" BackgroundColor="DarkOrange" HorizontalOptions="Center" HeightRequest="50"
+                 WidthRequest="150"/>
+            </StackLayout>
+
+            </Grid>
+
+
+        </VerticalStackLayout>
+    </ScrollView>
+</ContentPage>

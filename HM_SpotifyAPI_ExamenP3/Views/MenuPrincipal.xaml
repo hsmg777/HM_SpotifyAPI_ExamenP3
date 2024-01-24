@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="HM_SpotifyAPI_ExamenP3.Views.MenuPrincipal"
+             Title="MenuPrincipal"
+             BackgroundColor="Black">
+    <ScrollView>
+    <VerticalStackLayout Spacing="10" >
+        <Label Text="SPOTIFY API" TextColor="LightGreen" FontSize="30" HorizontalTextAlignment="Center" VerticalOptions="Center"/>
+            <Label Text="Aqui podra buscar segun el nombre del artista sus ultimos 3 albums publicados" HorizontalOptions="Center" FontSize="16" TextColor="White"/>
+            <Grid>
+                <Grid.RowDefinitions>
+                    <RowDefinition Height="*" />
+                </Grid.RowDefinitions>
+                <Grid.ColumnDefinitions>
+                    <ColumnDefinition Width="*" />
+                    <ColumnDefinition Width="*" />
+                </Grid.ColumnDefinitions>
+                <Button Text="BUSCAR ALBUMS" Clicked="irBuscar_Clicked" BackgroundColor="LightGreen" HorizontalOptions="Center" HeightRequest="50"
+                        WidthRequest="150" Grid.Row="0" Grid.Column="0" TextColor="Black"/>
+                <Button Text="VER GUARDADOS" Clicked="irSQL_Clicked" BackgroundColor="LightGreen" HorizontalOptions="Center" HeightRequest="50"
+                        WidthRequest="150" Grid.Row="0" Grid.Column="1" TextColor="Black"/>
+            </Grid>
+            
+        </VerticalStackLayout>
+    </ScrollView>
+</ContentPage>
