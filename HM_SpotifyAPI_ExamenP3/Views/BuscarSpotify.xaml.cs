@@ -76,7 +76,7 @@ public partial class BuscarSpotify : ContentPage
         };
         App.saveRepo.Add(save);
         DisplayAlert("GUARDADO", $"Se ha GUARDADO la informacion del album {nombre}", "ACEPTAR");
-        lblinfo.Text = null;
+        
     }
 
     private void guardar_Clicked2(object sender, EventArgs e)
@@ -92,7 +92,7 @@ public partial class BuscarSpotify : ContentPage
         };
         App.saveRepo.Add(save);
         DisplayAlert("GUARDADO", $"Se ha GUARDADO la informacion del album {nombre}", "ACEPTAR");
-        lblinfo.Text = null;
+        
     }
 
     private void guardar_Clicked3(object sender, EventArgs e)
@@ -108,6 +108,6 @@ public partial class BuscarSpotify : ContentPage
         };
         App.saveRepo.Add(save);
         DisplayAlert("GUARDADO", $"Se ha GUARDADO la informacion del album {nombre}", "ACEPTAR");
-        lblinfo.Text = null;
+       
     }
 }
