@@ -7,6 +7,7 @@
     <ScrollView>
     <VerticalStackLayout Spacing="10" >
         <Label Text="SPOTIFY API" TextColor="LightGreen" FontSize="30" HorizontalTextAlignment="Center" VerticalOptions="Center"/>
+            <Label Text="by Hayland Montalvo" TextColor="Gray" FontSize="10" HorizontalTextAlignment="Center"/>
             <Label Text="Aqui podra buscar segun el nombre del artista sus ultimos 3 albums publicados" HorizontalOptions="Center" FontSize="16" TextColor="White"/>
             <Grid>
                 <Grid.RowDefinitions>
